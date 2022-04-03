@@ -1,0 +1,26 @@
+.cta {
+  display: flex;
+  width: 100vw;
+  flex: 1;
+  .image-container {
+    width: 50%;
+  }
+  .image {
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    left: -30rem;
+    height: 60rem;
+    width: 85rem;
+  }
+  .action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-align: center;
+      font-size: 2.3rem;
+    }
+  }
+}
