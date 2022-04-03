@@ -5,7 +5,7 @@ import Signature from "../../assets/Signature.svg";
 
 export default function HomeAboutUs() {
   return (
-    <section className="about-us">
+    <section className="about-us" name="aboutus">
       <div className="text">
         <h1>O nas</h1>
         <img src={decoration} alt="decoration" height="33" />
