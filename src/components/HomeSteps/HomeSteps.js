@@ -5,7 +5,7 @@ import HomeStepsHeader from "./HomeStepsHeader";
 
 export default function HomeSteps() {
   return (
-    <section className="steps">
+    <section className="steps" name="steps">
       <HomeStepsHeader />
       <HomeStepsContent />
       <HomeStepsButton />
