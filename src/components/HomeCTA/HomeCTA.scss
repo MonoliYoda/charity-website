@@ -1,6 +1,7 @@
 @import "../../scss/colors";
 
 .cta {
+  margin-top: -9rem;
   display: flex;
   width: 100vw;
   .image-container {
@@ -15,6 +16,7 @@
     width: 85rem;
   }
   .action {
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +24,8 @@
     p {
       text-align: center;
       font-size: 2.3rem;
+      margin: 0.8rem 0;
+      color: $color-text-primary;
     }
     img {
       margin: 2rem 0;
@@ -41,6 +45,7 @@
       line-height: 3rem;
       color: $color-text-primary;
       margin: 3rem 2rem;
+      font-weight: 300;
     }
   }
 }
