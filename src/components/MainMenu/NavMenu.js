@@ -7,7 +7,7 @@ export default function NavMenu() {
     <nav>
       <ul className="nav-menu">
         <li>
-          <Link to="" className="start">
+          <Link to="cta" className="start">
             Start
           </Link>
         </li>
