@@ -12,7 +12,7 @@ export default function NavMenu() {
           </Link>
         </li>
         <li>
-          <Link to="">O co chodzi?</Link>
+          <Link to="steps">O co chodzi?</Link>
         </li>
         <li>
           <Link to="">O nas</Link>
