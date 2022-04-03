@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Home from "./Home";
+import UserLogin from "./UserLogin/UserLogin";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<UserLogin />}></Route>
       </Routes>
     </BrowserRouter>
   );
