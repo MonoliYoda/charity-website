@@ -1,5 +1,6 @@
 import React from "react";
 import HomeCTA from "./HomeCTA/HomeCTA";
+import HomeThreeColumns from "./HomeThreeColumns/HomeThreeColumns";
 import MainMenu from "./MainMenu/MainMenu";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <MainMenu />
       <HomeCTA />
+      <HomeThreeColumns />
     </>
   );
 }
