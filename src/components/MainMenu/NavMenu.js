@@ -7,7 +7,9 @@ export default function NavMenu() {
     <nav>
       <ul className="nav-menu">
         <li>
-          <Link to="">Start</Link>
+          <Link to="" className="start">
+            Start
+          </Link>
         </li>
         <li>
           <Link to="">O co chodzi?</Link>

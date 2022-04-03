@@ -8,8 +8,10 @@ export default function LoginMenu() {
       <li className="login">
         <Link to="/login">Zaloguj</Link>
       </li>
-      <li className="signup">
-        <Link to="/signup">Załóż konto</Link>
+      <li>
+        <Link to="/signup" className="signup">
+          Załóż konto
+        </Link>
       </li>
     </ul>
   );
