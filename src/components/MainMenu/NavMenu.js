@@ -18,7 +18,7 @@ export default function NavMenu() {
           <Link to="aboutus">O nas</Link>
         </li>
         <li>
-          <Link to="">Fundacja i organizacje</Link>
+          <Link to="who-we-help">Fundacja i organizacje</Link>
         </li>
         <li>
           <Link to="">Kontakt</Link>
