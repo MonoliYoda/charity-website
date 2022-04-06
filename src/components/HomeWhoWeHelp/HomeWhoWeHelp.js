@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import EntitySelector from "./EntitySelector";
 import "./HomeWhoWeHelp.scss";
 
@@ -110,7 +110,11 @@ export default function HomeWhoWeHelp() {
   ];
 
   const [selected, setSelected] = useState(foundations);
+  const [currentPageContent, setCurrentPageContent] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+
   const selectEntity = (id) => {
+    setCurrentPage(1);
     if (id === 1) {
       setSelected(foundations);
       return;
@@ -124,13 +128,31 @@ export default function HomeWhoWeHelp() {
       return;
     }
   };
+
+  const filterPage = (pageNumber) => {
+    setCurrentPageContent(
+      selected.filter((entity, idx) => {
+        return (pageNumber - 1) * 3 <= idx && idx < pageNumber * 3;
+      })
+    );
+  };
+  useEffect(() => {
+    filterPage(currentPage);
+  }, [currentPage, selected]);
+
   return (
     <section className="who-we-help" name="who-we-help">
       <HomeWhoWeHelpHeader />
       <EntitySelector callback={selectEntity} />
       <EntityGroupDescription description={entityGroupDesc} />
-      <EntityList entities={selected} />
-      {selected.length > 3 && <PageSelector entities={selected} />}
+      <EntityList entities={currentPageContent} />
+      {selected.length > 3 && (
+        <PageSelector
+          entities={selected}
+          callback={setCurrentPage}
+          currentPage={currentPage}
+        />
+      )}
     </section>
   );
 }

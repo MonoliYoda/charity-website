@@ -10,19 +10,19 @@ export default function EntitySelector({ callback }) {
   return (
     <div className="entity-selector">
       <button
-        className={selected === 1 && "selected"}
+        className={selected === 1 ? "selected" : ""}
         onClick={() => handleSelect(1)}
       >
         Fundacjom
       </button>
       <button
-        className={selected === 2 && "selected"}
+        className={selected === 2 ? "selected" : ""}
         onClick={() => handleSelect(2)}
       >
         Organizacjom pozarządowym
       </button>
       <button
-        className={selected === 3 && "selected"}
+        className={selected === 3 ? "selected" : ""}
         onClick={() => handleSelect(3)}
       >
         Lokalnym zbiórkom
