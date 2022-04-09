@@ -1,5 +1,6 @@
 import React from "react";
 import HomeAboutUs from "./HomeAboutUs/HomeAboutUs";
+import HomeContact from "./HomeContact/HomeContact";
 import HomeCTA from "./HomeCTA/HomeCTA";
 import HomeSteps from "./HomeSteps/HomeSteps";
 import HomeThreeColumns from "./HomeThreeColumns/HomeThreeColumns";
@@ -15,6 +16,7 @@ export default function Home() {
       <HomeSteps />
       <HomeAboutUs />
       <HomeWhoWeHelp />
+      <HomeContact />
     </>
   );
 }

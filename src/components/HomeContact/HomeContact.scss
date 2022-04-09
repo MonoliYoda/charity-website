@@ -1,0 +1,11 @@
+@import "../../scss/colors";
+
+.contact {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    .image {
+        background-image: url("../../assets/Background-Contact-Form.jpg");
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+}
