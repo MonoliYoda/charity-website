@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10rem;
     h1 {
       text-align: center;
       font-size: 2.4rem;
@@ -71,5 +72,23 @@
         padding: 1rem 3rem;
       }
     }
+  }
+}
+footer {
+  margin-top: -3rem;
+  position: relative;
+  p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .facebook-icon {
+    position: absolute;
+    top: -1rem;
+    right: 13rem;
+  }
+  .instagram-icon {
+    position: absolute;
+    top: -1rem;
+    right: 10rem;
   }
 }
