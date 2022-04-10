@@ -8,7 +8,7 @@ export default function UserLogin() {
   const [passwordField, setPasswordField] = useState("");
 
   const [emailError, setEmailError] = useState(false);
-  const [passwordError, setPasswordError] = useState(true);
+  const [passwordError, setPasswordError] = useState(false);
 
   const validateEmail = () => {
     return emailField.match(
