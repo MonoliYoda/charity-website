@@ -29,21 +29,43 @@ export default function HomeContact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    let formOK = true;
     if (validateName()) {
       setNameError(false);
     } else {
       setNameError(true);
+      formOK = false;
     }
     if (validateEmail()) {
       setEmailError(false);
     } else {
       setEmailError(true);
+      formOK = false;
     }
     if (validateMsg()) {
       setMsgError(false);
     } else {
       setMsgError(true);
+      formOK = false;
     }
+    if (formOK) submitForm();
+  };
+
+  const submitForm = async () => {
+    const response = await fetch("https://httpbin.org/post", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: nameField,
+        email: emailField,
+        message: msgField,
+      }),
+    });
+    console.log(response);
+    const content = await response.json();
+    console.log(content);
   };
 
   const textareaPlaceholder =
