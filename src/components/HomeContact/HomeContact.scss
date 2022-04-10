@@ -44,6 +44,9 @@
       textarea {
         resize: none;
       }
+      .errored {
+        border-bottom: 1px solid red;
+      }
     }
     .form-top {
       display: flex;
@@ -72,6 +75,11 @@
         padding: 1rem 3rem;
       }
     }
+  }
+  .error-message {
+    padding: 0.5rem;
+    color: red;
+    font-size: 0.8rem;
   }
 }
 footer {
