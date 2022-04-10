@@ -33,7 +33,7 @@ export default function NavMenu() {
           </Link>
         </li>
         <li>
-          <Link to="" smooth={true} duration={scrollDuration}>
+          <Link to="contact" smooth={true} duration={scrollDuration}>
             Kontakt
           </Link>
         </li>
