@@ -36,6 +36,9 @@
         color: $color-light-gray;
       }
     }
+    .errored {
+      border-bottom: 1px solid red;
+    }
   }
   .buttons {
     margin-top: 2.5rem;
@@ -53,5 +56,10 @@
     .outlined {
       border: 1px solid $color-text-primary;
     }
+  }
+  .error-message {
+    padding: 0.5rem;
+    color: red;
+    font-size: 0.8rem;
   }
 }
